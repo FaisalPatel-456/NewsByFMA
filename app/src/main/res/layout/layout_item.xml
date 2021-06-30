@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="280dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        android:elevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_heading_of_news"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Main Heading displayed hereMain Heading displayed hereMain Heading displayed here"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:ellipsize="end"
+                android:maxLines="2"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/content_of_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="6"
+                    android:padding="5dp"
+                    android:textSize="15sp"
+                    android:text="Main content"/>
+
+                <ImageView
+                    android:id="@+id/image_of_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_background"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/author_of_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By Faisal"
+                android:textSize="13sp"
+                android:textStyle="italic"
+                android:padding="5dp"
+                android:textColor="@android:color/holo_red_light"/>
+
+            <TextView
+                android:id="@+id/time_of_news"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:text="Published at"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
