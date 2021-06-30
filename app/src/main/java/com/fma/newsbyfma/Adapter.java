@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
 
+import java.text.MessageFormat;
 import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
@@ -45,7 +46,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                 context.startActivity(intent);
             }
         });
-        holder.time.setText("Published At : " + modelArrayList.get(position).getPublishedAt());
+        holder.time.setText(MessageFormat.format("Published At : {0}", modelArrayList.get(position).getPublishedAt()));
         holder.author.setText(modelArrayList.get(position).getAuthor());
         holder.heading.setText(modelArrayList.get(position).getTitle());
         holder.content.setText(modelArrayList.get(position).getDescription());
