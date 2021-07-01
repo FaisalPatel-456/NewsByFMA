@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private PagerAdapter pagerAdapter;
     private Toolbar toolbar;
     private ViewPager viewPager;
-    private final String api = "e4caaadfe1f54763877da8213d87f505";
+    private final String api = "yourApiKeyHere";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
