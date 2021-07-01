@@ -19,7 +19,7 @@ import retrofit2.Response;
 
 public class TechnologyFragment extends Fragment {
 
-    private final String api = "e4caaadfe1f54763877da8213d87f505";
+    private final String api = "YourApiKeyHere";
     private ArrayList<Model> modelArrayList;
     private Adapter adapter;
     private String country = "in";
